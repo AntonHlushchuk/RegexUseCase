@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# Application Description:
+The developed application is a simple React component that allows users to input a text and set a maximum length for the input. The component provides real-time validation to ensure that the input string meets specific criteria, including the presence of uppercase and lowercase letters, digits, special characters, and no whitespaces. Additionally, the component dynamically updates its output to indicate whether the input is valid or not. By leveraging regular expressions, the application efficiently performs the validation, optimizing execution speed and ensuring simplicity in the codebase. Users can interact with the component, input various strings, and adjust the maximum length dynamically, providing a user-friendly experience for validating text inputs in a wide range of scenarios.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Regex Implementation Description:
+The implementation is divided into five distinct regex categories: whitespace, uppercase letter, lowercase letter, digit, and special characters. Each category is represented by a separate regex pair that defines the required pattern. By using positive lookahead assertions, the regular expression ensures that the input string contains at least one character from each category. The regex also incorporates the concept of quantifiers, allowing flexibility in the occurrence of certain character types while still enforcing the overall criteria. The use of anchors, such as ^ and $, guarantees that the entire input string is matched, preventing partial matches. The regex is then combined into a single expression, including the maximum length constraint, to validate the complete input string against all criteria.
 
-## Available Scripts
+# How to Run:
+To run the developed application locally, follow these steps:
 
-In the project directory, you can run:
+* Clone the project repository from GitHub (or download and extract the ZIP file).
+* Ensure that you have Node.js and npm (Node Package Manager) installed on your machine.
+* Open a terminal or command prompt and navigate to the project directory.
+* Install the required dependencies by running the command: `npm install / yarn`.
+* Once the dependencies are installed, start the development server with: `npm start / yarn start`.
 
-### `npm start`
+The application should now be running on http://localhost:3000 by default.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open your web browser and visit http://localhost:3000 to interact with the application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+You can input text into the main input field, change the maximum length using the separate input, and click the "Validate" button to see the validation result.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+By following these steps, you can easily set up and test the developed React component locally on your machine.
