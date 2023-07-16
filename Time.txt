@@ -1,0 +1,7 @@
+Started at 17:42
+UC#10 Infrastructure setup - 3 minutes (17:45)
+UC#10 Implement regex - 1 hour and 10 minutes (18:55)
+UC#10 Implement regex tests - 13 minutes (19:08)
+UC#10 Create documentation - 8 minutes (19:16)
+
+Overall: 1 hour 34 minutes
