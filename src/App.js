@@ -1,5 +1,6 @@
 import './App.css';
 import validateString from './validateString';
+import testFunction from "./testFunction";
 import { useState } from 'react';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
 
     const handleValidation = () => {
         setIsValid(validateString(inputText, maxLength));
+        testFunction();
     };
 
     const handleMaxLengthChange = (event) => {
